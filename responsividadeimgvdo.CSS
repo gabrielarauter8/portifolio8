@@ -1,0 +1,105 @@
+@media (max-width: 1200px) {
+
+  /* Reduz o tamanho do título do cabeçalho */
+  header h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  /* Faz os cards da galeria ocuparem 45% (duas colunas) */
+  .gallery__item {
+    flex: 1 1 45%;
+  }
+
+  /* Reduz o tamanho do título principal */
+  .main__title {
+    font-size: 1.8rem;
+  }
+
+  /* Diminui a fonte do rodapé */
+  footer span {
+    font-size: 0.75em;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  /* Empilha os itens do cabeçalho e centraliza */
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+ 
+header nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  header nav a {
+    margin: 6px;
+    font-size: 1.2em;
+  }
+
+
+  /* Deixa os cards em uma única coluna, largura de 90% */
+  .gallery__item {
+    flex: 1 1 100%;
+    max-width: 90%;
+  }
+
+  /* Reduz o título principal */
+  .main__title {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+  }
+
+  /* Reduz o tamanho da legenda das imagens/vídeos */
+  .gallery__caption {
+    font-size: 0.95rem;
+  }
+
+  /* Ajusta o espaçamento e centraliza o rodapé */
+  footer {
+    padding: 12px;
+    text-align: center;
+  }
+
+  /* Reduz ainda mais a fonte do rodapé */
+  footer span {
+    font-size: 0.7em;
+  }
+}
+
+/* Telas muito pequenas - celulares pequenos */
+@media (max-width: 480px) {
+
+  /* Reduz ainda mais o tamanho do título */
+  header h1 {
+    font-size: 26px;
+  }
+
+  /* Reduz o padding dos cards para caber melhor */
+  .gallery__item {
+    padding: 10px;
+  }
+
+  /* Diminui o título principal da página */
+  .main__title {
+    font-size: 1.4rem;
+  }
+
+  /* Diminui a legenda das imagens */
+  .gallery__caption {
+    font-size: 0.9rem;
+  }
+
+  /* Faz com que imagens dentro de <figure> se ajustem à largura da tela */
+  main figure img {
+    width: 100%;
+    height: auto;
+  }
+}
+

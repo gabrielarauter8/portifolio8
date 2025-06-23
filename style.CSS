@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Inclui padding e border no cálculo de tamanho */
+
+  }
+ 
+  /* Geral*/
+  body {
+    font-family: "Montserrat",sans-serif;
+    background-color: #e9f4fd;
+    color: #e9f4fd;
+    line-height: 1.6; /* Espaçamento entre linhas */
+  }
+ 
+  .container {
+    max-width: 1200px; /* Largura máxima para centralizar o conteúdo */
+    margin: 0 auto; /* Centraliza o conteúdo na tela */
+    padding: 0 20px; /* Espaço lateral interno */
+  }
+ 
+  /* HEADER */
+
+  header h1{
+    font-size: 2.8em;
+    font-weight: 200;
+    cursor: pointer;
+  }
+
+ header nav {
+  display: flex;
+  flex-wrap: wrap; /* Permite quebrar linha */
+  justify-content: center;
+  align-items: center;
+  gap: 12px; /* Espaço entre os ícones */
+  padding: 10px;
+}
+
+ header nav a {
+  font-size: 1.4em;
+  text-decoration: none;
+  color: white;
+}
+
+
+ header h1, a{
+    color:  rgb(201, 230, 255);
+    transition: 0.2s ease-in-out;
+}
+
+header{
+    background: #045489 ;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+ 
+  .logo {
+    height: 50px; /* Altura da logomarca */
+  }
+ 
+ 
+  .nav__list {
+    display: flex; /* Itens lado a lado */
+    list-style: none; /* Remove bolinhas da lista */
+    gap: 25px; /* Espaço entre os links */
+  }
+ 
+  .nav__link {
+    color:rgb(201, 230, 255) ;
+    font-weight: bold;
+   
+  }
+ 
+  .nav__link:hover
+ 
+  .nav__link.active {
+    color: #ffe5e5; /* Tom mais claro ao passar o mouse ou link ativo */
+    border-bottom: 2px solid #fff; /* Destaque do link ativo */
+  }
+ 
+  /*CONTEÚDO PRINCIPAL*/
+  .main {
+    padding: 40px 0; /* Espaçamento vertical no conteúdo */
+  }
+ 
+  .main__title {
+    margin-bottom: 30px;
+    font-size: 2rem; /* Tamanho grande do título */
+    color:#002f4e; /* Cor vermelha */
+    text-align: center; /* Centraliza o título */
+  }
+ 
+  /*GALERIA*/
+  .gallery {
+    display: flex;
+    flex-wrap: wrap; /* Permite quebrar linha em telas pequenas */
+    gap: 20px;
+    justify-content: center; /* Centraliza os cartões */
+  }
+ 
+  .gallery__item {
+    background-color: rgb(201, 230, 255);;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    flex: 1 1 300px; /* NOVO: define tamanho mínimo e permite crescer */
+    max-width: 400px; /* Largura máxima por cartão */
+    box-sizing: border-box;
+  }
+ 
+  .gallery__item video {
+    width: 100%; /* Ocupa toda a largura do item */
+    border-radius: 8px;
+    display: block;
+  }
+ 
+  .gallery__item:hover {
+    transform: translateY(-5px); /* Levanta o cartão ao passar o mouse */
+  }
+   
+ 
+  .gallery__item img,
+  .gallery__item iframe {
+    width: 100%; /* Ocupa toda a largura do cartão */
+    border-radius: 8px;
+  }
+ 
+  .gallery__caption {
+    margin-top: 10px;
+    font-size: 1rem;
+    text-align: center;
+    color: #555;
+  }
+ 
+  /* RODAPÉ */
+  .footer {
+    background: linear-gradient(to right, #045489, #002f4e); /*Degradê*/
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.15); /* Sombra para cima */
+  }
+ 
+  .footer a {
+    color: whitesmoke;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+
+  footer span{
+    font-size: 0.8em;
+    font-weight: 200;
+}
+
+footer a{
+    font-size: 0.8em;
+    font-weight: 200;
+}
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+ 

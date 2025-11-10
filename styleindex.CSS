@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color:  #e9f4fd;
+    color:  #e9f4fd;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+header{
+    background-color: #045489;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+footer{
+    background: linear-gradient(90deg, #045489, #002f4e); /* Degradê azul */
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-content{
+    display: flex;
+    flex-direction: column;
+}
+.text p{
+    width: 75%;
+    font-size: 1.2em;
+    font-weight: 300;
+    text-align: justify;
+    line-height: 1.6;
+}
+footer span{
+    font-size: 0.8em;
+    font-weight: 200;
+}
+.main-content h2{
+    margin-bottom: 2%;
+    font-size: 2.2em;
+}
+.text{
+    margin-bottom: 10%;
+}
+.titulo{
+    color:  rgb(0, 47, 78);
+}
+.projetos {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.card{
+    width: 120px;
+    height: 120px;
+    background-color: #e9f4fd;
+    border-radius: 8px;
+    margin-right: 1.8em;
+    margin-left: 1.8em;
+    cursor: pointer;
+    text-align: center;
+    transition: box-shadow 1.25 ease-in-out;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    vertical-align: middle;
+}
+.card:hover{
+    box-shadow:0px 0px 8px   rgb(0, 47, 78);
+}
+header h1{
+    font-size: 2.8em;
+    font-weight: 200;
+    cursor: pointer;
+}
+header nav{
+    display: flex;
+    align-items: center;
+}
+header nav a{
+    margin-right: 1.3em;
+    font-size: 1.5em;
+}
+header h1, a{
+    color:  rgb(201, 230, 255);;
+    transition: 0.2s ease-in-out;
+}
+main figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main figure img{
+    width: 400px;
+    height: 500px;
+    border-radius: 200px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(0, 47, 78);
+}
+main figure img:hover{
+    box-shadow: 0px 0px 8px  rgb(0, 47, 78);
+}
